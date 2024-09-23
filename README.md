@@ -1,13 +1,17 @@
-# WhiteSpace_LanguageLearn
-学习WhiteSpace编程语言
+# WhiteSpace_Learn
+WhiteSpace编程语言  
+[本地IDE](./whitespace/index.html)|[在线IDE](http://vii5ard.github.io/whitespace/)
+:-:|:-:
 
-## `whitespace`
-该文件夹为官方文件夹
-whitespace/index.html可打开whitespace本地网页版IDE；
-需要在线IDE请点击[此处](http://vii5ard.github.io/whitespace/)。
+---
 
-## `MyWSCodes`
-该文件夹为本人学WhiteSpace时所创建
+## 文件说明
+### `whitespace`
+此目录下载自[官方GitHub库](https://github.com/vii5ard/whitespace)  
+
+### `MyWSCodes`
+此目录为本人学WhiteSpace时所创建  
+
 文件/目录|说明
 :-:|:-:
 `pasm_code`|自己编写的`.pasm`文件，可以通过`pasm2ws.py`将`.pasm`文件转成`.ws`代码文件
