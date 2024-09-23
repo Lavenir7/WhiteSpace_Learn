@@ -34,7 +34,7 @@ IMP|命令|参数|说明
 `[Tab][Space]`|`[Space][Tab]`|-|减法`subtop - top` (sub)
 `[Tab][Space]`|`[Space][LF]`|-|乘法`subtop * top` (mul)
 `[Tab][Space]`|`[Tab][Space]`|-|除法`subtop / top` (div)
-`[Tab][Space]`|`[Tab][Tab]`|-|求模`subtop % top` (mod)
+`[Tab][Space]`|`[Tab][Tab]`|-|求模`subtop mod top` (mod)
 `[Tab][Tab]`|`[Space]`|-|保存到堆: (store)
 `[Tab][Tab]`|`[Tab]`|-|从堆中取出数据 (retrieve)
 `[LF]`|`[Space][Space]`|标签|在该处设定一个跳转标签 (label)
@@ -42,12 +42,12 @@ IMP|命令|参数|说明
 `[LF]`|`[Space][LF]`|标签|跳转标签 (jmp)
 `[LF]`|`[Tab][Space]`|标签|取出栈顶元素并判断：等于0则跳转标签 (jz)
 `[LF]`|`[Tab][Tab]`|标签|取出栈顶元素并判断：小于0则跳转标签 (jn)
-`[LF]`|`[Tab][LF]`|-|结束子程序 (ret)
+`[LF]`|`[Tab][LF]`|-|返回调用处 (ret)
 `[LF]`|`[LF][LF]`|-|结束程序 (end)
 `[Tab][LF]`|`[Space][Space]`|-|输出栈顶字符 (printc)
 `[Tab][LF]`|`[Space][Tab]`|-|输出栈顶数字 (printi)
-`[Tab][LF]`|`[Tab][Space]`|-|读取字符存至堆中 (readc)
-`[Tab][LF]`|`[Tab][Tab]`|-|读取数字存至堆中 (readi)
+`[Tab][LF]`|`[Tab][Space]`|-|读取字符 (readc)
+`[Tab][LF]`|`[Tab][Tab]`|-|读取数字 (readi)
 
 ### 与堆相关的几条说明：
 - `store`: 【个人实践理解】将栈顶两个元素构成键值对`subtop: top`，然后放入堆中；
@@ -64,6 +64,6 @@ IMP|命令|参数|说明
 ---
 
 ## 编辑和运行
-我们可以在 https://vii5ard.github.io/whitespace/ 中对 whitespace 进行编辑和运行，同时有着许多示例代码可供参考。
+我们可以在 [在线IDE](https://vii5ard.github.io/whitespace/) 对 whitespace 进行编辑和运行，同时有着许多示例代码可供参考。
 
 在运行的时候，该网站 IDE 可以查看翻译的伪汇编代码（whitespace 虚拟机字节码），并且可以时刻中断来查看堆栈情况，方便调试程序和观察代码运行。
